@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DY Hairstylist — Luxury Hair Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+<nav>
+  <div class="logo">DY <span>Hairstylist</span></div>
+  <div class="nav-links">
+    <a href="#about">Studio</a>
+    <a href="#services">Services</a>
+    <a href="#edit">The Edit</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="knob">
+        <svg id="toggleIcon" viewBox="0 0 24 24" fill="none" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+        </svg>
+      </span>
+    </button>
+    <a href="#" class="book-pill">Book Appointment</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+ 
+<div class="menu-backdrop" id="menuBackdrop"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">Studio</a>
+  <a href="#services">Services</a>
+  <a href="#edit">The Edit</a>
+  <a href="#contact">Contact</a>
+</div>
+ 
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-weave"></div>
+  <div class="hero-scrim"></div>
+  <!--
+    PLACEHOLDER: this hero-bg/hero-weave layer stands in for real footage.
+    Swap <div class="hero-bg"></div> for:
+    <video autoplay muted loop playsinline class="hero-bg"
+           poster="braid-poster.jpg" style="object-fit:cover;width:100%;height:100%;">
+      <source src="braiding-session.mp4" type="video/mp4">
+    </video>
+    Ideal footage/photo: a stylist braiding a client's hair in the studio —
+    hands mid-motion, warm lighting, close enough to see the parting and technique.
+  -->
+  <div class="hero-copy">
+    <span class="eyebrow">Luxury Hair Studio</span>
+    <h1>Luxury Hair.<br><em>Timeless</em> Beauty.</h1>
+    <p class="sub">Because every queen deserves her crown. Step into a studio experience built around precision, elegance, and you.</p>
+    <div class="hero-ctas">
+      <a href="#" class="btn-primary">Book Appointment</a>
+      <a href="#edit" class="btn-ghost">Explore The Studio Edit →</a>
+    </div>
+  </div>
+  <span class="hero-caption">Studio Footage — Braiding Session</span>
+  <div class="scroll-cue"></div>
+</section>
+ 
+<section class="about" id="about">
+  <div class="about-inner reveal">
+    <span class="eyebrow">The House of DY</span>
+    <h2>A studio built on confidence</h2>
+    <p>DY Hairstylist was founded on a single belief: that beauty is a form of self-respect. Every appointment is a quiet ritual — precise styling, considered products, and an atmosphere designed to make you feel as exceptional as you look.</p>
+    <p class="display">"Every queen deserves her crown."</p>
+  </div>
+</section>
+ 
+<section id="services">
+  <div class="section-head reveal">
+    <span class="eyebrow">Signature Services</span>
+    <h2>Crafted for every occasion</h2>
+    <div class="rule"></div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal reveal-stagger"><span class="num">I.</span><h3>Knotless Braids</h3><p>Seamless, lightweight, long-lasting.</p></div>
+    <div class="service-card reveal reveal-stagger"><span class="num">II.</span><h3>Wig Installation</h3><p>Flawless, natural-finish application.</p></div>
+    <div class="service-card reveal reveal-stagger"><span class="num">III.</span><h3>Bridal Hair</h3><p>Timeless styling for your biggest day.</p></div>
+    <div class="service-card reveal reveal-stagger"><span class="num">IV.</span><h3>Frontal Styling</h3><p>Precision lace work, undetectable finish.</p></div>
+    <div class="service-card reveal reveal-stagger"><span class="num">V.</span><h3>Natural Hair</h3><p>Healthy styling that honors texture.</p></div>
+    <div class="service-card reveal reveal-stagger"><span class="num">VI.</span><h3>Home Service</h3><p>Studio-level luxury, delivered to you.</p></div>
+  </div>
+</section>
+ 
+<section class="about" id="edit">
+  <div class="section-head reveal">
+    <span class="eyebrow">The Studio Edit</span>
+    <h2>A portfolio of finished work</h2>
+    <div class="rule"></div>
+  </div>
+  <div class="edit-grid">
+    <div class="edit-card reveal reveal-stagger"><div class="info"><div class="cat">Braids Collection</div><h4>Boho Goddess</h4><a href="#" class="book-link">Book This Style</a></div></div>
+    <div class="edit-card reveal reveal-stagger"><div class="info"><div class="cat">Wig Collection</div><h4>Silk Press Frontal</h4><a href="#" class="book-link">Book This Style</a></div></div>
+    <div class="edit-card reveal reveal-stagger"><div class="info"><div class="cat">Bridal Collection</div><h4>The Heirloom Updo</h4><a href="#" class="book-link">Book This Style</a></div></div>
+    <div class="edit-card reveal reveal-stagger"><div class="info"><div class="cat">Natural Hair</div><h4>Coiled Elegance</h4><a href="#" class="book-link">Book This Style</a></div></div>
+  </div>
+</section>
+ 
+<section class="why-cta">
+  <span class="eyebrow">Why Choose DY</span>
+  <div class="why-pillars">
+    <div class="pillar reveal reveal-stagger"><span class="eyebrow">01</span><p>Premium products, personalized to your hair</p></div>
+    <div class="pillar reveal reveal-stagger"><span class="eyebrow">02</span><p>Meticulous attention to every detail</p></div>
+    <div class="pillar reveal reveal-stagger"><span class="eyebrow">03</span><p>Studio or home — luxury, either way</p></div>
+  </div>
+  <h2>Ready for your next transformation?</h2>
+  <a href="#" class="btn-dark">Book Your Appointment</a>
+</section>
+ 
+<footer id="contact">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="logo">DY <span style="color:#D8B978">Hairstylist</span></div>
+      <p style="margin-top:1rem; max-width:240px;">Luxury hair, crafted for women who value elegance and confidence.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Studio</h4>
+      <a href="#">Book Appointment</a>
+      <a href="#">The Studio Edit</a>
+      <a href="#">Services</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="#">WhatsApp</a>
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <p>Studio Location, City</p>
+      <p>Mon–Sat · 9am–7pm</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 DY Hairstylist. All rights reserved.</div>
+</footer>
