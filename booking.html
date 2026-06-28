@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reserve Your Experience | DY Hairstylist</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/booking.css">
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav>
+
+    <div class="logo">
+        DY <span>Hairstylist</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html#about">Studio</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#edit">Signature Styles</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+
+    <div class="nav-right">
+
+        <button class="theme-toggle" id="themeToggle">
+
+            <span class="knob">
+
+                <svg id="toggleIcon" viewBox="0 0 24 24"></svg>
+
+            </span>
+
+        </button>
+
+    </div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="booking-hero">
+
+    <span class="eyebrow reveal">
+        Reserve Your Experience
+    </span>
+
+    <h1 class="reveal">
+        Every Beautiful Transformation
+        <br>
+        Begins Here.
+    </h1>
+
+    <p class="reveal">
+
+        Choose how you'd like to experience
+        DY Hairstylist.
+
+        Every appointment is thoughtfully planned
+        to ensure a calm, luxurious and
+        personalized experience.
+
+    </p>
+
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section class="experience-section">
+
+    <div class="experience-grid">
+
+        <!-- Studio -->
+
+        <div class="experience-card reveal"
+             data-experience="Studio Experience">
+
+            <span class="experience-label">
+
+                Studio Experience
+
+            </span>
+
+            <h3>
+
+                Luxury Begins At Our Studio
+
+            </h3>
+
+            <p>
+
+                Enjoy your appointment in a calm,
+                elegant space designed around comfort,
+                beauty and exceptional service.
+
+            </p>
+
+            <button class="choose-btn">
+
+                Choose Studio →
+
+            </button>
+
+        </div>
+
+        <!-- Home -->
+
+        <div class="experience-card reveal"
+             data-experience="Home Service">
+
+            <span class="experience-label">
+
+                Home Experience
+
+            </span>
+
+            <h3>
+
+                Luxury Comes To You
+
+            </h3>
+
+            <p>
+
+                Prefer staying home?
+
+                We'll bring the complete luxury
+                hairstyling experience directly
+                to your doorstep.
+
+            </p>
+
+            <button class="choose-btn">
+
+                Choose Home →
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FORM ================= -->
+
+<section id="bookingFormSection" class="booking-section hidden">
+
+    <div class="booking-intro">
+        <span class="eyebrow" id="bookingGreeting">
+            Welcome.
+        </span>
+
+        <h2>Tell us about your appointment.</h2>
+
+        <p>
+            Every appointment is tailored to you.
+            Complete the form below and we'll prepare your luxury experience.
+        </p>
+    </div>
+
+    <form id="bookingForm" class="booking-form">
+
+        <div class="form-group">
+            <label>Full Name</label>
+            <input
+                type="text"
+                id="fullName"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address (Optional)</label>
+            <input
+                type="email"
+                id="email">
+        </div>
+
+        <div class="form-group">
+
+            <label>Choose a Service</label>
+
+            <select id="service">
+
+                <option value="">Select a Service</option>
+
+                <option>Knotless Braids</option>
+
+                <option>Boho Braids</option>
+
+                <option>Stitch Braids</option>
+
+                <option>Goddess Braids</option>
+
+                <option>Fulani Braids</option>
+
+                <option>Kinky Twists</option>
+
+                <option>Cornrows</option>
+
+                <option>Frontal Installation</option>
+
+                <option>Wig Installation</option>
+
+                <option>Bridal Hairstyling</option>
+
+                <option>Children's Hairstyling</option>
+
+                <option>Consultation</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Preferred Date</label>
+
+            <input
+                type="date"
+                id="date">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Preferred Time</label>
+
+            <input
+                type="time"
+                id="time">
+
+        </div>
+
+        <div
+            class="form-group hidden"
+            id="addressGroup">
+
+            <label>Home Address</label>
+
+            <textarea
+                id="address"></textarea>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Additional Notes</label>
+
+            <textarea
+                id="notes"
+                placeholder="Tell us anything you'd like us to know..."></textarea>
+
+        </div>
+
+        <button
+            type="submit"
+            class="btn-primary">
+
+            Continue
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- ================= SUMMARY ================= -->
+
+<section id="bookingSummary" class="summary-section hidden">
+
+    <div class="summary-card">
+
+        <span class="eyebrow">
+            Your Reservation
+        </span>
+
+        <h2>Booking Summary</h2>
+
+        <div class="summary-item">
+            <span>Experience</span>
+            <strong id="summaryExperience"></strong>
+        </div>
+
+        <div class="summary-item">
+            <span>Name</span>
+            <strong id="summaryName"></strong>
+        </div>
+
+        <div class="summary-item">
+            <span>Service</span>
+            <strong id="summaryService"></strong>
+        </div>
+
+        <div class="summary-item">
+            <span>Date</span>
+            <strong id="summaryDate"></strong>
+        </div>
+
+        <div class="summary-item">
+            <span>Time</span>
+            <strong id="summaryTime"></strong>
+        </div>
+
+        <button
+            id="whatsappBtn"
+            class="whatsapp-btn">
+
+            Continue on WhatsApp
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-bottom">
+
+        © 2026 DY Hairstylist
+
+    </div>
+
+</footer>
+
+<script src="/script.js"></script>
+<script src="/booking.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,443 @@
+/* ==========================================================
+   BOOKING PAGE
+   ========================================================== */
+
+.booking-hero{
+    max-width:900px;
+    margin:140px auto 90px;
+    padding:0 2rem;
+    text-align:center;
+}
+
+.booking-hero h1{
+    font-size:clamp(3rem,7vw,5rem);
+    line-height:1.05;
+    margin:1rem 0;
+}
+
+.booking-hero p{
+    max-width:680px;
+    margin:0 auto;
+    color:var(--text-soft);
+    font-size:1.08rem;
+    line-height:1.9;
+}
+
+/* ==========================================================
+   EXPERIENCE SECTION
+   ========================================================== */
+
+.experience-section{
+    max-width:1200px;
+    margin:0 auto 120px;
+    padding:0 2rem;
+}
+
+.experience-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:2rem;
+}
+
+.experience-card{
+
+    position:relative;
+
+    padding:3rem;
+
+    background:var(--bg-panel);
+
+    border:1px solid rgba(216,185,120,.15);
+
+    border-radius:28px;
+
+    transition:.45s ease;
+
+    cursor:pointer;
+
+    overflow:hidden;
+
+}
+
+.experience-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(216,185,120,.04),
+        transparent 60%
+    );
+
+    opacity:0;
+
+    transition:.45s;
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(216,185,120,.5);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.08);
+
+}
+
+.experience-card:hover::before{
+
+    opacity:1;
+
+}
+
+.experience-card.active{
+
+    border:2px solid var(--accent-gold);
+
+    box-shadow:
+    0 25px 70px rgba(216,185,120,.18);
+
+}
+
+.experience-label{
+
+    display:inline-block;
+
+    margin-bottom:2rem;
+
+    font-size:.72rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:.25em;
+
+    color:var(--accent-gold);
+
+}
+
+.experience-card h3{
+
+    font-size:2rem;
+
+    margin-bottom:1rem;
+
+}
+
+.experience-card p{
+
+    color:var(--text-soft);
+
+    line-height:1.9;
+
+    margin-bottom:2.5rem;
+
+}
+
+.choose-btn{
+
+    background:none;
+
+    border:none;
+
+    padding:0;
+
+    font-family:inherit;
+
+    font-size:.9rem;
+
+    letter-spacing:.08em;
+
+    color:var(--accent-gold);
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.choose-btn:hover{
+
+    transform:translateX(8px);
+
+}
+
+/* ==========================================================
+   BOOKING FORM
+   ========================================================== */
+
+.booking-section{
+
+    max-width:900px;
+
+    margin:0 auto 120px;
+
+    padding:0 2rem;
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:.8s ease;
+
+}
+
+.booking-section.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.booking-form{
+
+    background:var(--bg-panel);
+
+    border-radius:30px;
+
+    padding:3rem;
+
+    border:1px solid rgba(216,185,120,.15);
+
+}
+
+.form-group{
+
+    margin-bottom:1.8rem;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:.8rem;
+
+    font-size:.85rem;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    color:var(--text-soft);
+
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+
+    width:100%;
+
+    padding:1rem 1.2rem;
+
+    border-radius:16px;
+
+    border:1px solid rgba(216,185,120,.18);
+
+    background:transparent;
+
+    color:var(--text);
+
+    font-family:inherit;
+
+    font-size:1rem;
+
+    transition:.35s;
+
+}
+
+.form-group textarea{
+
+    resize:vertical;
+
+    min-height:160px;
+
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+
+    outline:none;
+
+    border-color:var(--accent-gold);
+
+    box-shadow:0 0 0 5px rgba(216,185,120,.08);
+
+}
+
+/* ==========================================================
+   SUMMARY
+   ========================================================== */
+
+.summary-section{
+
+    max-width:700px;
+
+    margin:0 auto 120px;
+
+    padding:0 2rem;
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:.8s ease;
+
+}
+
+.summary-section.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.summary-card{
+
+    padding:3rem;
+
+    border-radius:30px;
+
+    background:var(--bg-panel);
+
+    border:1px solid rgba(216,185,120,.15);
+
+}
+
+.summary-card h2{
+
+    margin-bottom:2rem;
+
+}
+
+.summary-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:1rem 0;
+
+    border-bottom:1px solid rgba(216,185,120,.12);
+
+}
+
+.summary-item:last-child{
+
+    border:none;
+
+}
+
+/* ==========================================================
+   WHATSAPP BUTTON
+   ========================================================== */
+
+.whatsapp-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:.8rem;
+
+    width:100%;
+
+    margin-top:2rem;
+
+    padding:1rem;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#25D366;
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.whatsapp-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 15px 35px rgba(37,211,102,.28);
+
+}
+
+/* ==========================================================
+   UTILITIES
+   ========================================================== */
+
+.hidden{
+
+    display:none;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media(max-width:900px){
+
+    .experience-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .experience-card{
+
+        padding:2.2rem;
+
+    }
+
+    .booking-form{
+
+        padding:2rem;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .booking-hero{
+
+        margin-top:120px;
+
+    }
+
+    .booking-hero h1{
+
+        font-size:2.6rem;
+
+    }
+
+    .experience-card h3{
+
+        font-size:1.6rem;
+
+    }
+
+}
