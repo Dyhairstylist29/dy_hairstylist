@@ -136,7 +136,7 @@ bookingForm.addEventListener("submit", function (e) {
 
     whatsappButton.onclick = function () {
 
-        const phoneNumber = "234XXXXXXXXXX"; // Replace with her WhatsApp number
+        const phoneNumber = "2348103139457"; // Replace with her WhatsApp number
 
 
         let message =
